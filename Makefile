@@ -3,13 +3,13 @@ SHELL := /bin/bash
 # components repos
 GODWOKEN_REPO := https://github.com/jjyr/godwoken.git
 GODWOKEN_SCRIPTS_REPO := https://github.com/jjyr/godwoken-scripts.git
-POLYJUICE_REPO := https://github.com/nervosnetwork/godwoken-polyjuice.git
+POLYJUICE_REPO := https://github.com/jjyr/godwoken-polyjuice.git
 CLERKB_REPO := https://github.com/nervosnetwork/clerkb.git
 
 # components tags
 GODWOKEN_REF := support-verify-ethereum-signature
 GODWOKEN_SCRIPTS_REF := support-verify-ethereum-signature
-POLYJUICE_REF := v0.8.9
+POLYJUICE_REF := upgrade-molecule-files
 CLERKB_REF := v0.4.0
 
 define prepare_repo
