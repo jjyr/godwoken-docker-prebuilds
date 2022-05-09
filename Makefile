@@ -1,13 +1,13 @@
 SHELL := /bin/bash
 
 # components repos
-GODWOKEN_REPO := https://github.com/nervosnetwork/godwoken.git
+GODWOKEN_REPO := https://github.com/jjyr/godwoken.git
 GODWOKEN_SCRIPTS_REPO := https://github.com/nervosnetwork/godwoken-scripts.git
 POLYJUICE_REPO := https://github.com/nervosnetwork/godwoken-polyjuice.git
 OMNI_LOCK_REPO := https://github.com/nervosnetwork/ckb-production-scripts.git
 
 # components tags
-GODWOKEN_REF := v1.0.0-rc1
+GODWOKEN_REF := feat-package-failed-txs
 GODWOKEN_SCRIPTS_REF := v1.0.0-rc1
 POLYJUICE_REF := v1.0.0-rc1
 OMNI_LOCK_REF := rc_lock
