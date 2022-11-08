@@ -7,7 +7,7 @@ POLYJUICE_REPO := https://github.com/godwokenrises/godwoken-polyjuice.git
 OMNI_LOCK_REPO := https://github.com/nervosnetwork/ckb-production-scripts.git
 
 # components tags
-GODWOKEN_REF := support-debug-api # https://github.com/godwokenrises/godwoken/compare/v1.7.0-rc2...v1.7.0
+GODWOKEN_REF := v1.7.0-debug # https://github.com/godwokenrises/godwoken/compare/v1.7.0-rc2...v1.7.0
 GODWOKEN_SCRIPTS_REF := v1.3.0-rc1 # https://github.com/godwokenrises/godwoken-scripts/compare/v1.1.0-beta...v1.3.0-rc1
 POLYJUICE_REF := 1.4.5 # https://github.com/godwokenrises/godwoken-polyjuice/compare/1.4.1...1.4.5
 OMNI_LOCK_REF := rc_lock
@@ -43,8 +43,8 @@ build-components: prepare-repos
 build-push:
 	make build-components
 	@read -p "Please Enter New Image Tag: " VERSION ; \
-	docker build . -t nervos/godwoken-prebuilds:$$VERSION ; \
-	docker push nervos/godwoken-prebuilds:$$VERSION
+	docker build . -t ghcr.io/jjyr/godwoken-prebuilds:$$VERSION ; \
+	docker push ghcr.io/jjyr/godwoken-prebuilds:$$VERSION
 
 test:
 	make build-components
